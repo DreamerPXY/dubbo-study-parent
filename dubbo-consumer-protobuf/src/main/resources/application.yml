@@ -1,0 +1,16 @@
+server:
+  port: 8101
+dubbo:
+  application:
+    name: dubbo-consumer
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  protocol:
+    name: dubbo
+    port: 20880
+    serialization: protobuf
+  scan:
+    base-packages: com.study.dubbo
+spring:
+  application:
+    name: dubbo-consumer
